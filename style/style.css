@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: blueviolet;
+    height: 100vh;
+    
+}
+
+.container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: wheat;
+    width: 70%;
+    padding: 1rem;
+    min-height: 200px;
+    border-radius: 12px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.spanQtd {
+    text-align: end;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.finish button {
+    text-align: center;
+}
+
+.correctOrIncorrect {
+    height: 18px;
+    width: 18px;
+    background-color: gray;
+
+    border-radius: 50%;
+}
+
+/* .correctOrIncorrect:hover .correctOrIncorrect::after {
+    content: "teste";
+    color: black;
+} */
