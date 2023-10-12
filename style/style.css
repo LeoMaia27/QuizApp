@@ -27,7 +27,7 @@ header {
 
 .headerTitle {
     color: wheat;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 }
 
 main {
@@ -41,6 +41,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    box-shadow: 1.5px 1.5px 3.2px black;
 }
 
 .content {
@@ -79,6 +81,8 @@ button {
     padding: 1rem 2rem;
     border-radius: 8px;
     cursor: pointer;
+
+    box-shadow: 1px 1px 4px black;
 }
 
 .finish button {
