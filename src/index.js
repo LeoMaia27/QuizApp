@@ -5,6 +5,7 @@ const textFinish = document.querySelector(".textFinish");
 const contentFinish = document.querySelector(".finish");
 const spanQtd = document.querySelector(".spanQtd");
 const buttonRestart = document.querySelector(".finish button");
+const correctOrIncorrect = document.querySelector(".correctOrIncorrect");
 
 import questions from './questions.js'; //questions retorna array de obj onde cada índice é uma question
 
@@ -34,7 +35,7 @@ const loadQuestion = () => {
 }
 
 const nextQuestion = event => {
-    const correctOrIncorrect = document.querySelector(".correctOrIncorrect");
+    
     if (event.target.getAttribute("data-correct") === "true") {
         questionsCorrect++;
         correctOrIncorrect.style.background = "green";
@@ -56,7 +57,10 @@ const nextQuestion = event => {
 }
 
 const finish = () => {
-    textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
+    textFinish.innerHTML = questionsCorrect >= 8 ? 
+        `Parabéns! Você acertou ${questionsCorrect} de ${questions.length}` :
+        `Você acertou ${questionsCorrect} de ${questions.length}`;
+
     content.style.display = "none";
     contentFinish.style.display = "flex";
 }
@@ -64,6 +68,7 @@ const finish = () => {
 buttonRestart.onclick = () => {
     content.style.display = "flex";
     contentFinish.style.display = "none";
+    correctOrIncorrect.style.background = "gray";
 
     currentQuestion = 0;
     questionsCorrect = 0;

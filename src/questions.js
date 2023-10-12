@@ -71,5 +71,13 @@ export default [
             { option: "Norte" , correct: false }
         ]
         
+    },
+    {
+        question: "Qual destas linguagens de programação é Brasileira?",
+        answers: [
+            { option: "Java", correct: false },
+            { option: "Lua", correct: true },
+            { option: "Go", correct: false }
+        ]
     }
 ];
