@@ -34,7 +34,7 @@ main {
     background-color: wheat;
     width: 70%;
     padding: 1rem;
-    min-height: 200px;
+    min-height: 220px;
     border-radius: 12px;
     margin: auto;
     display: flex;
@@ -48,6 +48,10 @@ main {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+}
+
+span {
+    font-size: 1.2rem;
 }
 
 .spanQtd {
@@ -67,6 +71,7 @@ main {
 }
 
 button {
+    font-size: 1.12rem;
     width: 100%;
     border: none;
     background-color: blueviolet;
